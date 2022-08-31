@@ -34,7 +34,7 @@ export default function StudentTable() {
         e.preventDefault()
         for (let i in student){
             if (e.target.id === i){
-              if (i<student.length) {
+              if (i<student.length-1) {
                 console.log(myStudent[i])
                 var newStudents = arrayMoveImmutable(myStudent, i, ((i-myStudent.length)+1))
                 myStudent = newStudents
